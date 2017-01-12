@@ -1,0 +1,3 @@
+SELECT Author.name,Genre.genre_name, books.name
+FROM Author LEFT  JOIN Genre ON Author.id=Genre.id_author 
+LEFT JOIN books ON Author.id=books.id_author
